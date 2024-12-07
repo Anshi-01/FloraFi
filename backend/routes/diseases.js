@@ -1,15 +1,13 @@
-const express = require('express')
-const router = express.Router()
-const Disease = require('../models/dieseaeModel')
+const express = require('express');
+const router = express.Router();
+const Disease = require('../models/dieseaeModel');
 
-// const requireAuth = require('../middleware/requireAuth')
-// router.use(requireAuth);
-
+// Fetch plant disease details by disease name
 router.get('/details/', async (req, res) => {
     const idName = req.query.name;
     
     try {
-        const disease = await Disease.findOne({idName: idName});
+        const disease = await Disease.findOne({ disease_name: idName });
         
         if (!disease) {
             return res.status(404).json({ message: 'Disease not found' });
@@ -20,6 +18,9 @@ router.get('/details/', async (req, res) => {
         console.error(error);
         res.status(500).json({ message: 'Server error' });
     }
-})
+});
 
-module.exports = router
+
+   
+
+module.exports = router;

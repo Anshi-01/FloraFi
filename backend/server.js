@@ -9,6 +9,7 @@ const cors = require('cors');
 
 const app = express()
 
+
 app.use(function(req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*')
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE')
@@ -23,6 +24,14 @@ app.use((req, res, next) => {
     console.log(req.path, req.method);
     next();
 })
+
+
+     // Enable CORS
+     app.use(cors({
+        origin: 'http://localhost:3000', // Replace this with your frontend URL
+        credentials: true // Allow cookies if needed
+      }));
+
 
 app.use('/api/diseases', diseasesRoutes)
 app.use('/api/user', userRoutes)
@@ -45,10 +54,5 @@ mongoose.connect(process.env.MONGO_URL)
 
 
 
-     // Enable CORS
-     app.use(cors({
-        origin: 'http://localhost:3000', // Replace this with your frontend URL
-        credentials: true // Allow cookies if needed
-      }));
 
   

@@ -27,7 +27,6 @@ const DragDrop = ({ onFileChange, onRemoveClicked }) => {
     setImage(null);
     document.getElementById("fileInput").value = "";
   };
-  
 
   return (
     <div className="upload-container">
@@ -51,7 +50,10 @@ const DragDrop = ({ onFileChange, onRemoveClicked }) => {
             <button
               type="button"
               className="remove-button"
-              onClick={() => {handleRemoveImage(); onRemoveClicked()}}
+              onClick={() => {
+                handleRemoveImage();
+                onRemoveClicked();
+              }}
             >
               &times;
             </button>

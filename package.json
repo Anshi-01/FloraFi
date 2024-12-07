@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-frontend": "cd ./frontend && npm start",
-    "start-backend": "cd ./backend && npm run dev",
+    "start-backend": "cd ./backend && node server.js",
     "start-api": "cd ./image-based-ident-api && uvicorn main:app --host=localhost --port=8000",
     "start-project": "npm run start-frontend & npm run start-backend & npm run start-api"
   },
@@ -23,6 +23,10 @@
   "homepage": "https://github.com/Mr-Abhishek-Shinde/plant-disease-identification#readme",
   "dependencies": {
     "bcrypt": "^5.1.1",
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "jspdf": "^2.5.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
   }
 }

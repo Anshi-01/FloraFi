@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import "../css/Login.css";
-
 import { useLogin } from "../hooks/useLogin";
 
 const LoginComponent = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const {login, error, isLoading } = useLogin();
+  const { login, error, isLoading } = useLogin();
 
   const handleLogin = async (e) => {
     e.preventDefault();
 
+    // Attempt login
     await login(email, password);
   };
 

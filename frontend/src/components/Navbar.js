@@ -15,10 +15,12 @@ const Navbar = (props) => {
   // }, 1000);
 
   return (
-    <div className="navbar">
+    <div className="navbar"style={{
+          zIndex: 1, // Ensure the toast is above other elements like nav
+        }}>
       <div className="nav-title">
         <Link to="/">
-          <h1 className="title">AgroNexus</h1>
+          <h1 className="title">FloraFi</h1>
           <h3>From Diagnosis To Solution</h3>
         </Link>
       </div>

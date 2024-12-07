@@ -25,7 +25,7 @@ const HomePage = (props) => {
       <section className="section1 section">
         <img src={heroImage} alt="" />
         <div className="overlay">
-          <h1 data-aos="fade-left">AgroNexus</h1>
+          <h1 data-aos="fade-left">FloraFi</h1>
           <h2 data-aos="fade-right">From Diagnosis To Solution</h2>
           <p className="tagline" data-aos="zoom-in" data-aos-duration="1200">
             The Future of Plant Health is Here
@@ -42,11 +42,11 @@ const HomePage = (props) => {
       </section>
       <section className="section2 section">
         <div className="overlay info">
-          <h2>What Is AgroNexus?</h2>
+          <h2>What Is FloraFi?</h2>
           <p>
-            AgroNexus is a platform that detects the diseases in crops and
+            FloraFi is a platform that detects the diseases in crops and
             provides information and solutions for the diseases. One of the key
-            features of AgroNexus is its ability to predict and diagnose crop
+            features of FloraFi is its ability to predict and diagnose crop
             diseases and pests using machine learning algorithms.
           </p>
           <h3>Connecting Agriculture and Technology</h3>
@@ -65,14 +65,14 @@ const HomePage = (props) => {
             <h3>Scan Your Plants</h3>
             <p>
               Simply upload a picture of your plant and let{" "}
-              <span> AgroNexus </span> do the rest.
+              <span> FloraFi </span> do the rest.
             </p>
           </li>
           <li>
             <img src={diagnoseImage} alt="" />
             <h3>Diagnose The Diseases</h3>
             <p>
-              AgroNexus uses AI and machine learning to accurately diagnose
+              FloraFi uses AI and machine learning to accurately diagnose
               plant diseases.
             </p>
           </li>

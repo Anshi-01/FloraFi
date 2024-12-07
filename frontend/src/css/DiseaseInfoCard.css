@@ -1,0 +1,37 @@
+.disease-info-card {
+    background-color: #f9f9f9;
+    padding: 30px; /* Increased padding for more space inside */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+    min-height: 200px; /* Set a minimum height for the card */
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Increased margin for more space */
+    color: #333;
+    text-align: center;
+}
+
+.data-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    font-size: 16px;
+    color: #555;
+    padding: 10px 0; /* Increased padding for better spacing between items */
+    border-bottom: 1px solid #ddd;
+}
+
+.no-data-message {
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+}
